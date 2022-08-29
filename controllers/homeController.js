@@ -1,8 +1,7 @@
 
 const Url = require('../models/Url');
 const { nanoid } = require('nanoid');
-const { findByIdAndUpdate } = require('../models/Url');
-
+    
 const agregarUrls = async(req, res) =>{
     const {origin} = req.body;
     try {
@@ -90,5 +89,5 @@ module.exports = {
     eliminarUrl,
     editarUrl,
     editarUrlForm,
-    redireccionamiento
+    redireccionamiento,
 }
